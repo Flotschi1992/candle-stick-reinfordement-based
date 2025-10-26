@@ -1,0 +1,34 @@
+
+-- What We Want to Do ----------------------------------------------------------
+Build a self-adapting AI that predicts the next candlestick (or its direction) using reinforcement learning (RL). The model will learn from historical data and continue adapting as new data arrives.
+
+-- Tech Stack ------------------------------------------------------------------
+
+Environment: GitHub Codespaces
+Language: Python
+Libraries:
+
+Stable Baselines3 (RL algorithms like PPO)
+Gymnasium (custom trading environment)
+PyTorch (for neural networks, LSTM/Transformer)
+Pandas, NumPy (data handling)
+Matplotlib/Plotly (visualization)
+
+-- Goal -------------------------------------------------------------------------
+
+--> Short-term:
+Create an RL agent that:
+
+Takes recent candlestick data as state.
+Predicts next candle or decides an action (buy/sell/hold).
+Learns from rewards (accuracy or simulated profit).
+Adapts continuously.
+
+--> Long-term:
+Build a framework that can transfer this adaptive learning concept to other domains (e.g., robotics).
+
+-- Tomorrow, we can start with: ------------------------------------------------
+
+Step 1: Define the RL environment (state, action, reward).
+Step 2: Implement PPO + LSTM policy using Stable Baselines3.
+Step 3: Train on historical candlestick data.
