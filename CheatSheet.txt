@@ -23,7 +23,7 @@
     git commit -m "why would I commit"
     git push    
 
-## B R A N C H E S ############################################################
+++ B R A N C H E S ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 -- Which Branches we got and were are   we ------------------------------------
 
@@ -37,13 +37,30 @@
 
 -- Create A New Branch --------------------------------------------------------
 
-    git checkout -b <new-branch-name>
+    git checkout -b <prefix>/<new-branch-name>
     git push -u origin <new-branch-name>
     git branch  
+
+    with prefix:
+        - feature/      → For new features (e.g., feature/data-exploration).
+        - bugfix/       → For fixing bugs (e.g., bugfix/fix-reward-calculation).
+        - hotfix/       → For urgent fixes in production.
+        - release/      → For preparing a release version.
+        - experiment/   → For trying out ideas without merging into main.
 
 -- merge back 2 main ----------------------------------------------------------
 
     git checkout main
     git pull
     git merge <your-current-branch-name>
+
+## GitHub Stuff ###############################################################
+
+-- switch enviroment to python 3.11 -------------------------------------------
+
+    /usr/local/python/3.11.9/bin/python3 -m venv rl-env
+    source ../rl-env/bin/activate
+    python --version  # Should show 3.11.9
+
+--    
 

@@ -17,18 +17,18 @@ Matplotlib/Plotly (visualization)
 -- Goal -------------------------------------------------------------------------
 
 --> Short-term:
-Create an RL agent that:
+    Create an RL agent that:
 
-Takes recent candlestick data as state.
-Predicts next candle or decides an action (buy/sell/hold).
-Learns from rewards (accuracy or simulated profit).
-Adapts continuously.
+    Takes recent candlestick data as state.
+    Predicts next candle or decides an action (buy/sell/hold).
+    Learns from rewards (accuracy or simulated profit).
+    Adapts continuously.
 
 --> Long-term:
-Build a framework that can transfer this adaptive learning concept to other domains (e.g., robotics).
+    Build a framework that can transfer this adaptive learning concept to other domains (e.g., robotics).
 
--- Tomorrow, we can start with: ------------------------------------------------
+-- What to be done -------------------------------------------------------------
+1.) Get GitHub Codespace up and running
+2.) Create a basic file structure
+1.) Get the data, have a look at it and clean it up
 
-Step 1: Define the RL environment (state, action, reward).
-Step 2: Implement PPO + LSTM policy using Stable Baselines3.
-Step 3: Train on historical candlestick data.
