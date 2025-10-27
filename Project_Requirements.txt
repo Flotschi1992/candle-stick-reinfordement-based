@@ -1,6 +1,9 @@
 
 -- What We Want to Do ----------------------------------------------------------
-Build a self-adapting AI that predicts the next candlestick (or its direction) using reinforcement learning (RL). The model will learn from historical data and continue adapting as new data arrives.
+Build a self-adapting AI that predicts the next candlestick (or its direction) 
+using reinforcement learning (RL). The model will learn from historical data and 
+continue adapting as new data arrives.
+
 
 -- Tech Stack ------------------------------------------------------------------
 
@@ -15,20 +18,46 @@ Pandas, NumPy (data handling)
 Matplotlib/Plotly (visualization)
 
 -- Goal -------------------------------------------------------------------------
-
+--> Main Focus: Creation of RL project to be able to show potential employes some 
+    skills!!
+--> Learn by doing. It is important to implement everythin step by step to be 
+    able to learn
+    --> we wanted to use the daily candlestick from the Dow Jones us30 Index
+    --> we wanted to get the data from yahoo
 --> Short-term:
+    Get the needed data, view it and verify it
     Create an RL agent that:
+        Takes recent candlestick data as state.
+        Predicts next candle or decides an action (buy/sell/hold).
+        Learns from rewards (accuracy or simulated profit).
+        Adapts continuously.
 
-    Takes recent candlestick data as state.
-    Predicts next candle or decides an action (buy/sell/hold).
-    Learns from rewards (accuracy or simulated profit).
-    Adapts continuously.
 
---> Long-term:
-    Build a framework that can transfer this adaptive learning concept to other domains (e.g., robotics).
-
--- What to be done -------------------------------------------------------------
+-- Where we are right now -------------------------------------------------------------
 1.) Get GitHub Codespace up and running
-2.) Create a basic file structure
-1.) Get the data, have a look at it and clean it up
+2.) Install all packages from requirements.txt
+3.) create a data_import.ipynb
+3.) Try to get all data between 01jan200 - 31dez2024
+    -> failed with 
+            Failed to get ticker 'DOW' reason: Expecting value: line 1 column 1 (char 0)
+            [*********************100%%**********************]  1 of 1 completed
 
+            1 Failed download:
+            ['DOW']: Exception('%ticker%: No timezone found, symbol may be delisted')
+
+
+
+-- Folderstraucture -------------------------------------------------------------------
+
+tree
+.
+├── .devcontainer
+│   └── devcontainer.json
+├── .gitignore
+├── CheatSheet.txt
+├── LICENSE
+├── Project_Requirements.txt
+├── README.md
+├── notebooks
+│   └── data_import.ipynb
+└── requirements.txt
