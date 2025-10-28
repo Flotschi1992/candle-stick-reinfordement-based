@@ -1,6 +1,7 @@
 # fsks stuff
 .env
 *.py
+models/ppo_trading.zip
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

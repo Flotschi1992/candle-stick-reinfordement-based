@@ -1,7 +1,21 @@
-# those lib versions are optimized for python 3.11.9
-# please check versions if you are using something diffeent
+
+# Jupyter and visualization
 jupyterlab==4.0.11
-pandas==2.2.2
-alpha_vantage==2.3.1
 plotly==5.24.1
 mplfinance==0.12.10b0
+
+# Data handling
+pandas==2.2.2
+numpy>=1.23,<2.0
+scikit-learn>=1.2
+joblib>=1.2
+
+# API
+alpha_vantage==2.3.1
+python-dotenv>=1.0,<2.0
+
+# RL stack
+gymnasium==0.29.1
+stable-baselines3==2.3.2
+torch>=2.0,<2.3
+

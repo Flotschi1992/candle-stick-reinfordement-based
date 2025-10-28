@@ -45,6 +45,9 @@ Libraries:
 3.) create a data_import.ipynb
     a.) Get all data between 01jan200 - 31dez2024 from Alpha Vantage -> DIA
     b.) Have a first look at the data 
+    c.) data was cleaned and stored in data/clean_data.csv
+    d.) basic vaisualisation was done 
+4.) created notebooks/rl_environment.ipynb with Gymnasium environment skeleton  
 
 
 
@@ -60,6 +63,11 @@ tree
 ├── LICENSE
 ├── Project_Requirements.txt
 ├── README.md
+├── data
+│   └── Candlestick_01jan2000_31dec2024.csv
+├── models
+│   └── scaler.pkl
 ├── notebooks
-│   └── data_import.ipynb
+│   ├── data_import.ipynb
+│   └── rl_environment.ipynb
 └── requirements.txt
