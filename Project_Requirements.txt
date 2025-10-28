@@ -2,7 +2,12 @@
 -- What We Want to Do ----------------------------------------------------------
 Build a self-adapting AI that predicts the next candlestick (or its direction) 
 using reinforcement learning (RL). The model will learn from historical data and 
-continue adapting as new data arrives.
+continue adapting as new data arrives. For the candlestich we want to use the 
+Dow Jones us30 Index. Idea would be, each day (or like each 
+evening):
+ - it grabs the last valid data, 
+ - compares it with what was estimated and adapts itself
+ - gives a prediction of tomorrows data
 
 
 -- Tech Stack ------------------------------------------------------------------
@@ -10,12 +15,11 @@ continue adapting as new data arrives.
 Environment: GitHub Codespaces
 Language: Python
 Libraries:
-
-Stable Baselines3 (RL algorithms like PPO)
-Gymnasium (custom trading environment)
-PyTorch (for neural networks, LSTM/Transformer)
-Pandas, NumPy (data handling)
-Matplotlib/Plotly (visualization)
+    Stable Baselines3 (RL algorithms like PPO)
+    Gymnasium (custom trading environment)
+    PyTorch (for neural networks, LSTM/Transformer)
+    Pandas, NumPy (data handling)
+    Matplotlib/Plotly (visualization)
 
 -- Goal -------------------------------------------------------------------------
 --> Main Focus: Creation of RL project to be able to show potential employes some 
@@ -31,28 +35,26 @@ Matplotlib/Plotly (visualization)
         Predicts next candle or decides an action (buy/sell/hold).
         Learns from rewards (accuracy or simulated profit).
         Adapts continuously.
+    Idea would be to train it with a certain amount of data, and keep some to play a bit 
+    with the scenario, like decribed above. 
 
 
 -- Where we are right now -------------------------------------------------------------
 1.) Get GitHub Codespace up and running
 2.) Install all packages from requirements.txt
 3.) create a data_import.ipynb
-3.) Try to get all data between 01jan200 - 31dez2024
-    -> failed with 
-            Failed to get ticker 'DOW' reason: Expecting value: line 1 column 1 (char 0)
-            [*********************100%%**********************]  1 of 1 completed
-
-            1 Failed download:
-            ['DOW']: Exception('%ticker%: No timezone found, symbol may be delisted')
+    a.) Get all data between 01jan200 - 31dez2024 from Alpha Vantage -> DIA
+    b.) Have a first look at the data 
 
 
 
--- Folderstraucture -------------------------------------------------------------------
+-- Folderstructure -------------------------------------------------------------------
 
 tree
 .
 ├── .devcontainer
 │   └── devcontainer.json
+├── .env
 ├── .gitignore
 ├── CheatSheet.txt
 ├── LICENSE

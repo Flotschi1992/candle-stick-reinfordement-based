@@ -1,9 +1,30 @@
+
 {
   "name": "RL Trading Env",
   "image": "mcr.microsoft.com/devcontainers/python:3.11",
   "features": {
     "ghcr.io/devcontainers/features/python:1": {
       "version": "3.11"
+    }
+  },
+  "remoteEnv": {
+    "FSKs_ALPHA_VANTAGE_API_KEY": "${localEnv:FSKs_ALPHA_VANTAGE_API_KEY}"
+  },
+  "postCreateCommand": "python -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt && python -m ipykernel install --user --name rl-trading-env --display-name 'Python (.venv)'",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.profiles": {
+          "bash": {
+            "path": "/bin/bash",
+            "args": [
+              "--rcfile",
+              "/workspaces/candle-stick-reinfordement-based/.venv/bin/activate"
+            ]
+          }
+        },
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
     }
   }
 }
