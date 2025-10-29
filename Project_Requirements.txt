@@ -48,8 +48,21 @@ Libraries:
     c.) data was cleaned and stored in data/clean_data.csv
     d.) basic vaisualisation was done 
 4.) created notebooks/rl_environment.ipynb with Gymnasium environment skeleton  
+    a.) create a trading env class
+    b.) get the data and normalize it
+    c.) train the model
+    d.) test the model
 
-
+What we should do next:
+    -> understand the data
+        -> understand the input data, to be able to better
+        -> understandthe output data, especially in
+        -> the context of normalisation, and
+        -> what I really would have
+            -> won, or
+            -> lost, or
+            -> what my maximal loss would be (how deep do I have to grab in the pocket)
+               (depending on my stake)
 
 -- Folderstructure -------------------------------------------------------------------
 
