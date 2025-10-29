@@ -11,8 +11,9 @@ scikit-learn>=1.2
 joblib>=1.2
 
 # API
-alpha_vantage==2.3.1
+#alpha_vantage==2.3.1
 python-dotenv>=1.0,<2.0
+#yfinance==0.2.66
 
 # RL stack
 gymnasium==0.29.1
