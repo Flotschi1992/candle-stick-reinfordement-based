@@ -54,6 +54,24 @@
     git pull
     git merge <your-current-branch-name>
 
+++ Fetching stuff +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+-- get an existing Repro ------------------------------------------------------
+
+    git clone https://github.com/GetIntoAiEng/candle-stick-reinfordement-based.git
+    cd candle-stick-reinfordement-based
+
+-- list all branch ------------------------------------------------------------
+
+    git branch -r       (r = remote)
+
+
+-- checkout an branch ---------------------------------------------------------
+
+    git fetch
+    git checkout -b branch-name origin/branch-name
+
+
 ## GitHub Stuff ###############################################################
 
 -- switch enviroment to python 3.11 -------------------------------------------
