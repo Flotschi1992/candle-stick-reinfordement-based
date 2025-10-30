@@ -67,9 +67,14 @@
 
 
 -- checkout an branch ---------------------------------------------------------
-
     git fetch
     git checkout -b branch-name origin/branch-name
+
+-- update a branch from an other locations change -----------------------------
+    git fetch origin
+    git checkout <branch-name>
+    git pull origin <branch-name>
+
 
 
 ## GitHub Stuff ###############################################################
